@@ -22,15 +22,15 @@ import static com.yinxiang.utils.thrift.grpc.operations.FilesOperation.*;
 
 /**
  * The thrift service loader.
- * <li>
- *   <ol>0 arg will create a {@link StructInfo} named <code>Empty</code> which does not have anyone field.</ol>
- *   <ol>1 arg struct will create a gRPC mapping message.</ol>
- *   <ol>1 arg primitive type will create a gRPC message which has only one field to record this arg.</ol>
- *   <ol>More than 1 args will create a gRPC message which has same amount field to record these args.</ol>
- *   <ol><code>void</code> method is same with 1.</ol>
- *   <ol>Has a struct return type method is same with 2.</ol>
- *   <ol>Has a primitive type return type method is same with 3.</ol>
- * </li>
+ * <p>
+ *   1. 0 arg will create a {@link StructInfo} named <code>Empty</code> which does not have anyone field.
+ *   2. 1 arg struct will create a gRPC mapping message.
+ *   3. 1 arg primitive type will create a gRPC message which has only one field to record this arg.
+ *   4. More than 1 args will create a gRPC message which has same amount field to record these args.
+ *   5. <code>void</code> method is same with 1.
+ *   6. Has a struct return type method is same with 2.
+ *   7. Has a primitive type return type method is same with 3.
+ * </p>
  * @author Huiyuan Fu
  * @since 1.0.0
  * @see Loader
